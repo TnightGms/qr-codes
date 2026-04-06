@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador QR Pro | tnightgms</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="glass-card">
+        <h1><i class="fa-solid fa-qrcode"></i> QR Studio</h1>
+        <p>Genera y personaliza tu código QR</p>
+        
+        <div class="input-group">
+            <input type="text" id="textoQR" placeholder="Pega un enlace o texto aquí..." autocomplete="off">
+        </div>
+
+        <div class="opciones-color">
+            <div class="color-picker">
+                <label for="colorQR">Color del QR</label>
+                <input type="color" id="colorQR" value="#000000">
+            </div>
+            <div class="color-picker">
+                <label for="colorFondo">Fondo</label>
+                <input type="color" id="colorFondo" value="#ffffff">
+            </div>
+        </div>
+        
+        <button id="btnGenerar"><i class="fa-solid fa-wand-magic-sparkles"></i> Generar QR</button>
+        
+        <div id="cajaImagen">
+            <img src="" id="imagenQR" alt="Tu Código QR">
+            <button id="btnDescargar"><i class="fa-solid fa-download"></i> Descargar Imagen</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
